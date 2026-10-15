@@ -11,4 +11,6 @@ jobs:
   greetings:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Live long and prosper, ${{ inputs.name }} 🖖"
+    - uses: robstrdev/greetings-action@v1
+      with:
+        who-to-greet: Spock
