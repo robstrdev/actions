@@ -1,0 +1,14 @@
+name: Reusable workflow example
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
+
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Live long and prosper, ${{ inputs.name }} 🖖"
